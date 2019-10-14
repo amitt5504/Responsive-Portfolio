@@ -1,0 +1,322 @@
+body {
+    background-color: #cccccc;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-grow: 1;
+    margin: 0;
+}
+/* This class is for the header */
+.top {
+    background-color: #ffffff;
+    height: 85px;
+    background-attachment: fixed;
+    margin: auto;
+    clear: both;
+    width: 100%;
+}
+/* This class is for creating a section in the header of the 960px content width */
+.head {
+    width: 960px;
+    height: 85px;
+    align-content: center;
+    margin: auto;
+    background-color: #ffffff;
+    background-attachment: fixed;
+    clear: both;
+}
+
+/* Styling for the name and background of the element */
+#name {
+    float: left;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    width: 300px;
+    height: 85px;
+    line-height: 45px;
+}
+/* The following are for styling the navigation menu. */
+.menu {
+    float: right;
+    margin-top: 18px;
+}
+
+.topnav a {
+    height: 85px;
+    align-content: right;
+    color: #777777;
+    text-align: center;
+    padding: 25px 10px 25px 10px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.topnav #list {
+    display: inline;
+    border-right: 1px solid #777777;
+}
+
+.topnav #list:nth-child(3) {
+    border-right: 0;
+}
+
+#navbar li:nth-child(3) {
+    border-right: 0;
+}
+
+/* The horizonatal line within each container */
+#hr {
+    width: 90%;
+    align-items: center;
+    margin-top: -10px;
+}
+/* The container for the about me bio */
+.containerIndex {
+    width: 960px;
+    height: 450px;
+    margin: auto;
+    background: #ffffff;
+    border-color: #000000;
+    overflow: auto;
+    clear: both;
+}
+
+.me {
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#bio {
+    padding-left: 50px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    color: #4aaaa5;
+}
+
+p {
+    width: 95%;
+}
+
+#image {
+    float: left;
+    padding-right: 10px;
+}
+/* The container for the portfolio */
+.containerPort {
+    width: 960px;
+    height: 550px;
+    margin: auto;
+    background: #ffffff;
+    border-color: #000000;
+    overflow: auto;
+    clear: both;
+}
+/* Styling for the gallery items */
+.gallery1,
+.gallery2 {
+    margin-left: auto;
+    margin-bottom: 20px;
+    float: left;
+    padding-left: 47px;
+    padding-right: 50px;
+    position: relative;
+
+}
+
+.gallery3,
+.gallery4 {
+    margin-left: auto;
+    margin-bottom: 20px;
+    float: left;
+    padding-left: 47px;
+    padding-right: 50px;
+    position: relative;
+}
+/* This is for the text to display over the gallery image */
+.center1,
+.center2,
+.center3,
+.center4 {
+    position: absolute;
+    bottom: 40px;
+    background-color: #4aaaac;
+    color: white;
+    padding-top: 20px;
+    align-content: center;
+    width: 250px;
+    text-align: center;
+    height: 40px;
+    line-height: 20px;
+    font-size: 24px;
+}
+
+/* The container for the contact page */
+.containerContact {
+    width: 960px;
+    height: 450px;
+    margin: auto;
+    background: #ffffff;
+    border-color: #000000;
+    clear: both;
+    overflow: auto;
+
+}
+
+/* Styling for the form fields */
+input[type=text],
+select,
+textarea {
+    width: 92%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #4aaaac;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #cccccc;
+}
+
+#form {
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+/* To create the sticky footer */
+footer {
+
+    width: 100%;
+    height: 20px;
+    background-color: #666666;
+    margin-bottom: -1px;
+    text-align: center;
+    border-top: solid 8px #4aaaa5;
+    padding-bottom: 25px;
+    left: 0;
+    bottom: 0;
+    position: relative;
+    color: white;
+}
+
+
+@media screen and (max-width: 980px) {
+    .containerContact, .containerIndex, .containerPort, .footer {
+        width: 980px;
+    }
+
+    .top{
+        width: 980px;
+        margin: auto;
+    }
+    .head {
+        margin: auto;
+    }
+
+    .menu {
+        float: right;
+    }
+  
+    #name {
+        margin: auto;
+        text-align: center;
+        float: left;
+    }
+
+}
+
+  
+@media screen and (max-width: 768px) {
+    .containerContact, .containerIndex, .containerPort, .footer {
+        width: 768px;
+        height: 50%;
+    }
+
+    .top {
+        width: 768px;
+        margin: auto;
+    }  
+
+    .head {
+        width: auto;
+        margin: auto;
+}
+
+    .menu {
+        float: right;
+        margin-right: 10px;
+    }
+
+    #name {
+        margin-left: 40px;
+        text-align: center;
+        float: left;
+    }
+
+    footer {
+        margin-bottom: -10px;
+        position: relative;
+    }
+}
+  
+@media screen and (max-width: 640px) {
+    .containerContact, .containerIndex, .containerPort, .footer {
+        width: 620px;
+        margin: 10px;
+        
+    }
+  
+    .top, .head {
+        width: 640px;
+        background-color: #ffffff;
+        margin-bottom: 10px;
+    }
+  
+    .menu {
+        background-color: #ffffff;
+        width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: 10px;
+        height: 40px;
+        line-height: 10px;
+    }
+
+    .topnav {
+        text-align: center;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+  
+    #name {
+        width: 640px;
+        margin: auto;
+        text-align: center;
+    }
+
+    footer {
+        margin-bottom: -10px;
+        position: relative;
+    }
+}
+  
